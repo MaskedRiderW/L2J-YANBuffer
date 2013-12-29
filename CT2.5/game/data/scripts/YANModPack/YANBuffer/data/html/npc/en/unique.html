@@ -1,0 +1,42 @@
+<html><title>%buffer.name%</title><body>
+<br>
+<center>
+<table width="270" bgcolor="666666">
+	<tr>
+		<td>
+			<center>
+				Slots available & used <font color="LEVEL">(</font><font color="FFFFFF">%unique.num_buffs%</font><font color="FFFFFF">/</font><font color="FF0000">%buffer.unique_max_buffs%</font><font color="LEVEL">)</font>, <font color="LEVEL">(</font><font color="FFFFFF">%unique.num_songs_dances%</font><font color="FFFFFF">/</font><font color="FF0000">%buffer.unique_max_songs_dances%</font><font color="LEVEL">)</font>
+			</center>
+		</td>
+	</tr>
+</table>
+</center>
+<br>
+<table bgcolor="444444" width="270" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+			<center>
+				
+			</center>
+		</td>
+	</tr>
+</table>
+<br>
+<center>
+	<table width=270 cellspacing=0 cellpadding=1>
+		[FOREACH(buff IN unique.buffs DO
+		<tr>
+			<td valign="top" width=32 height=32><img width=32 height=32 src="%buff.skill_icon%"></td>
+			<td valign="top" height=32><button width=238 height=32 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire_bg" value="%buff.skill_name%" action="%buffer.bypass_prefix% unique remove %unique.name% %buff.ident%"></td>
+		</tr>
+		<tr><td height=10></td><td></td></tr>
+		)ENDEACH]
+	</table>
+</center>
+<br>
+<br>
+<table width="270">
+	<tr><td><button width="270" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Divine" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Divine_bg" value="Back to Home" action="%buffer.bypass_prefix% html main"></td></tr>
+	<tr><td height="5"></td></tr>
+</table>
+</body></html>

@@ -1,0 +1,109 @@
+<html><title>%buffer.name%</title><body><center>
+
+<br>
+<table bgcolor="333333">
+	<tr>
+		<td width="120">
+			<center>
+				<font color="LEVEL">Opciones:</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<table bgcolor="333333" width="270" cellspacing="1" cellpadding="1">
+	<tr>
+		<td width="100">
+			<combobox width="100" var="unique_selection" list="[FOREACH(unique IN uniques DO %unique.name%;)ENDEACH]">
+		</td>
+		<td width="80"><center><button width="80" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Earth" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Earth_bg" value="Ver" action="%buffer.bypass_prefix% html unique $unique_selection"></center></td>
+		<td width="80"><center><button width="80" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire_bg" value="Borrar" action="%buffer.bypass_prefix% unique delete $unique_selection"></center></td>
+	</tr>
+	<tr>
+		<td><edit width="100" var="unique_new"></td>
+		<td><center><button width="80" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg" value="Crear Vacio" action="%buffer.bypass_prefix% unique create $unique_new"></center></td>
+		<td><center><button width="80" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Copiar Buffs" action="%buffer.bypass_prefix% unique create_from_effects $unique_new"></center></td>
+	</tr>
+</table>
+<br>
+<table bgcolor="444444">
+	<tr>
+		<td width="150">
+			<center>
+				<font color="LEVEL">Usar scheme</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<table bgcolor="444444" width=270 cellspacing=0 cellpadding=2>
+	<tr>
+		<td>
+			<button width="135" height="28" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Dark" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Dark_bg" value="Buffearme" action="%buffer.bypass_prefix% target player unique $unique_selection">
+		</td>
+		<td>
+			<button width="135" height="28" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Dark" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Dark_bg" value="Buffear Summon" action="%buffer.bypass_prefix% target summon unique $unique_selection">
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+<table bgcolor="333333">
+	<tr>
+		<td width="120">
+			<center>
+				<font line="UNDERLINE" color="LEVEL">Servicios</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<table bgcolor="333333" width="270" cellspacing="0" cellpadding="2">
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg" value="Heal Me" action="%buffer.bypass_prefix% target player heal"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg" value="Heal Summon" action="%buffer.bypass_prefix% target summon heal"></center></td>
+	</tr>
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire_bg" value="Cancel Me" action="%buffer.bypass_prefix% target player cancel"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire_bg" value="Cancel Summon" action="%buffer.bypass_prefix% target summon cancel"></center></td>
+	</tr>
+</table>
+<br>
+
+<table bgcolor="333333">
+	<tr>
+		<td width="120">
+			<center>
+				<font line="UNDERLINE" color="LEVEL">AutoBuffs</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<table bgcolor="333333" width="270" cellspacing="0" cellpadding="2">
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Fire_bg" value="Fighter" action="%buffer.bypass_prefix% target player preset BC_FIGHTER"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg" value="Mage" action="%buffer.bypass_prefix% target player preset BC_MAGE"></center></td>
+	</tr>
+</table>
+<br>
+
+<font name=hs12 line=UNDERLINE color=LEVEL>Categorias</font><br1>
+<table bgcolor="333333" width="270" cellspacing="0" cellpadding="2">
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Buffs" action="%buffer.bypass_prefix% html category BC_BUFFS"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Songs" action="%buffer.bypass_prefix% html category BC_SONGS"></center></td>
+	</tr>
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Dances" action="%buffer.bypass_prefix% html category BC_DANCES"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Chants" action="%buffer.bypass_prefix% html category BC_CHANTS"></center></td>
+	</tr>
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Dwarven" action="%buffer.bypass_prefix% html category BC_DWARVEN"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Resist" action="%buffer.bypass_prefix% html category BC_RESIST"></center></td>
+	</tr>
+	<tr>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Special" action="%buffer.bypass_prefix% html category BC_SPECIAL"></center></td>
+		<td><center><button width="135" height="23" back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg" value="Overlord" action="%buffer.bypass_prefix% html category BC_OVERLORD"></center></td>
+	</tr>
+</table>
+<br>
+</center>
+</body>
+</html>
