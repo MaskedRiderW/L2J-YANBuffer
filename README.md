@@ -9,18 +9,31 @@ Features of latest version
 ==========================  
   
 Flexible buff cost configuration.  
+柔軟なバフコストな構成。  
 Support for enchanted skills.  
+エンチャントスキルのサポート  
 Support for duplicate skills with different enchant routes.  
+別のエンチャントルートと重複したスキルのサポート  
 Support for buff categories.  
+バフのカテゴリのサポート  
 Support for voiced command and NPC.  
+有声コマンドとNPCのサポート  
 Support to open the voiced buffer with item.  
+アイテムと有声バッファを開くためにサポートしています。  
 Support for multiple buffer NPCs with different buff categories.  
+異なるバフカテゴリを持つ複数のバッファのNPCのサポート  
 Support for player unique bufflists(create from current buffs and manually).  
+プレイヤーユニークbufflistsサポート（手動で現在存在しているのバフから作成できる）  
 Support to heal and calcel buffs.  
+癒すためにサポートとcalcelバフ  
 Support to buff/heal/cancel your current companion(pet & servitor).  
+バフへのサポート/あなたの現在のコンパニオンをキャンセル/癒す（ペット＆召喚獣）  
 Support for community board and npc window.  
+コミュニティボードとNPCウィンドウのサポート。  
 Custom template engine to generate htmls.  
+カスタムテンプレートエンジンはHTML群を生成する 
 Support for preset bufflists. Players can use this if they don't want to create a unique bufflist.  
+元からセットされたbufflistsのサポート。ユニークなbufflistを作成しない場合は、プレイヤーはこれを使用することができます
 Thanks To  
 JMD - Example XML data for buffs.xml, buff_categories.xml, voiced_buffer.xml and npc_buffers.xml  
 
