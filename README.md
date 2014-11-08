@@ -1,28 +1,28 @@
-L2J-YANBuffer
-=============
-
-=================================
-Powered By FBIagent - L2jServer
-=================================
-
-Features of latest version
-==========================
-
-Flexible buff cost configuration.
-Support for enchanted skills.
-Support for duplicate skills with different enchant routes.
-Support for buff categories.
-Support for voiced command and NPC.
-Support to open the voiced buffer with item.
-Support for multiple buffer NPCs with different buff categories.
-Support for player unique bufflists(create from current buffs and manually).
-Support to heal and calcel buffs.
-Support to buff/heal/cancel your current companion(pet & servitor).
-Support for community board and npc window.
-Custom template engine to generate htmls.
-Support for preset bufflists. Players can use this if they don't want to create a unique bufflist.
-Thanks To
-JMD - Example XML data for buffs.xml, buff_categories.xml, voiced_buffer.xml and npc_buffers.xml
+L2J-YANBuffer  
+=============  
+  
+=================================  
+Powered By FBIagent - L2jServer  
+=================================  
+  
+Features of latest version  
+==========================  
+  
+Flexible buff cost configuration.  
+Support for enchanted skills.  
+Support for duplicate skills with different enchant routes.  
+Support for buff categories.  
+Support for voiced command and NPC.  
+Support to open the voiced buffer with item.  
+Support for multiple buffer NPCs with different buff categories.  
+Support for player unique bufflists(create from current buffs and manually).  
+Support to heal and calcel buffs.  
+Support to buff/heal/cancel your current companion(pet & servitor).  
+Support for community board and npc window.  
+Custom template engine to generate htmls.  
+Support for preset bufflists. Players can use this if they don't want to create a unique bufflist.  
+Thanks To  
+JMD - Example XML data for buffs.xml, buff_categories.xml, voiced_buffer.xml and npc_buffers.xml  
 
 
 =================================
