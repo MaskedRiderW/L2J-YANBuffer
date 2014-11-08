@@ -50,10 +50,13 @@ Edit by T-Dat0r - L2jServer
 Setup Guide
 =================================
 XML Configuration  
+XML設定  
 Use a validating editor to edit the xml files, it will validate the files with the shipped xsd files.  
+出力されたXSDファイルを使用してファイルを検証してください。XMLファイルを編集するためにはエディタを使用しします。  
 The pack is shipped with example XML configurations which should make everything self explanatory.  
+パックは、説明付きのサンプルXML構成で出力されます。  
 1. Configure dialog type and heal cooldown in yanbuffer.xml.  
-2. Define item requirements in item_requirements.xml.  
+2. Define item requirements in item_requirements.xml. 
 3. Define buffs in buffs.xml. The buffs can have multiple items for it's payment fee.  
 4. Define buff categories in buff_categories.xml. The categories can have multiple buffs specified.  
 5. Define buff npcs in buffer_npcs.xml. The npcs can have multiple buff categories.  
@@ -69,7 +72,8 @@ I tested this with Adena, and when i tried to use it, the voiced buffer opened.
 Make it load  
 Add YANModPack/YANBuffer/YANBuffer.java to your scripts.cfg.  
 Preset Bufflists  
-You create usual buff categories in buff_categories.java. In the buffer_npcs.xml or voiced_buffer.xml you now have to set is_preset=true on the category you want to have as preset bufflist.  
+You create usual buff categories in buff_categories.java. 
+In the buffer_npcs.xml or voiced_buffer.xml you now have to set is_preset=true on the category you want to have as preset bufflist.  
   
   
 1. ダイアログのタイプ、クールダウン等をyanbuffer.xmlを設定します。  
@@ -86,15 +90,15 @@ Custom NPCs
 Voiced Buffer  
 あなたのプレーヤーは、通常の（白）チャットで.yanbuffer使用して有声バッファを開くことができます。
 アイテムでの作業有声バッファを取得するには、有声バッファを開く必要があり、アイテムのXMLに  
-<set name="handler" val="YANBufferItemHandler"/>  
+ \<set name="handler" val="YANBufferItemHandler"/\>  
 を追加する必要があります。  
 私はアデナでこれをテストし、私はそれを使用しようとしたとき、有声バッファがオープンしました。
-あなたのscripts.cfgにYANModPack / YANBuffer / YANBuffer.javaを追加します。
+あなたのscripts.cfgにYANModPack / YANBuffer / YANBuffer.javaを追加します。  
 Preset Bufflists  
 あなたはbuff_categories.javaにおける通常のバフカテゴリを作成。 
 buffer_npcs.xmlまたはvoiced_buffer.xmlあなたは今あなたがプリセットbufflistとして持ちたいカテゴリに真をis_preset =設定する必要があります。
 
-  
+
 =================================
 Version History  
 =================================
