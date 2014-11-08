@@ -72,6 +72,29 @@ Preset Bufflists
 You create usual buff categories in buff_categories.java. In the buffer_npcs.xml or voiced_buffer.xml you now have to set is_preset=true on the category you want to have as preset bufflist.  
   
   
+1. ダイアログのタイプ、クールダウン等をyanbuffer.xmlを設定します。  
+2. item_requirements.xmlを編集しコストを定義します。このコストは後のXMLで用います。  
+3. buffs.xmlでバフを定義します。バフはそれの支払い料金で複数のアイテムを持つことができます。
+4. buff_categories.xmlでバフのカテゴリを定義します。カテゴリは複数のバフを持つことができます。
+5. buffer_npcs.xmlでバフのNPCを定義します。 NPCは複数のバフのカテゴリを持つことができます。
+6. voiced_buffer.xmlにおける有声のバッファを設定します。有声バッファは、複数のバフのカテゴリを持つことができます。
+  
+Database  
+ユニークbufflist （と呼ばれることもありバフスキーマ）のために、あなたのゲームサーバデータベースにgame.sqlを実行する必要がある。
+Custom NPCs  
+あなたはbuffer_npcs.xml内のNPCに指定されたidを持つカスタムNPCのを作成する必要があります。
+Voiced Buffer  
+あなたのプレーヤーは、通常の（白）チャットで.yanbuffer使用して有声バッファを開くことができます。
+アイテムでの作業有声バッファを取得するには、有声バッファを開く必要があり、アイテムのXMLに  
+<set name="handler" val="YANBufferItemHandler"/>  
+を追加する必要があります。  
+私はアデナでこれをテストし、私はそれを使用しようとしたとき、有声バッファがオープンしました。
+あなたのscripts.cfgにYANModPack / YANBuffer / YANBuffer.javaを追加します。
+Preset Bufflists  
+あなたはbuff_categories.javaにおける通常のバフカテゴリを作成。 
+buffer_npcs.xmlまたはvoiced_buffer.xmlあなたは今あなたがプリセットbufflistとして持ちたいカテゴリに真をis_preset =設定する必要があります。
+
+  
 =================================
 Version History  
 =================================
