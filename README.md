@@ -93,7 +93,7 @@ Voiced Buffer
  \<set name="handler" val="YANBufferItemHandler"/\>  
 を追加する必要があります。  
 私はアデナでこれをテストし、私はそれを使用しようとしたとき、有声バッファがオープンしました。  
-あなたのscripts.cfgにYANModPack / YANBuffer / YANBuffer.javaを追加します。  
+あなたのscripts.cfgにcustom/YANBuffer/YANBuffer.java を追加します。  
 Preset Bufflists  
 あなたはbuff_categories.javaにおける通常のバフカテゴリを作成。 
 buffer_npcs.xmlまたはvoiced_buffer.xmlあなたは今あなたがプリセットbufflistとして持ちたいカテゴリに真をis_preset =設定する必要があります。
