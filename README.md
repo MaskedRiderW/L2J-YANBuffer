@@ -25,7 +25,7 @@ Support for multiple buffer NPCs with different buff categories.
 Support for player unique bufflists(create from current buffs and manually).  
 プレイヤーユニークbufflistsサポート（手動で現在存在しているのバフから作成できる）  
 Support to heal and calcel buffs.  
-癒すためにサポートとcalcelバフ  
+癒すためにサポートとキャンセルバフ  
 Support to buff/heal/cancel your current companion(pet & servitor).  
 バフへのサポート/あなたの現在のコンパニオンをキャンセル/癒す（ペット＆召喚獣）  
 Support for community board and npc window.  
